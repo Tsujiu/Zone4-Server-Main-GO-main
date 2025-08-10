@@ -1,0 +1,44 @@
+[
+  {
+    "id": "channel-9090",
+    "name": "Canal Principal",
+    "run_cmd": "go run ./cmd/server/main.go --port=9090",
+    "port": 9090
+  },
+  {
+    "id": "channel-a",
+    "name": "Canal A",
+    "run_cmd": "go run ./cmd/server/main.go --port=29998",
+    "port": 29998
+  },
+  {
+    "id": "channel-b",
+    "name": "Canal B",
+    "run_cmd": "go run ./cmd/server/main.go --port=29996",
+    "port": 29996
+  },
+  {
+    "id": "channel-c",
+    "name": "Canal C",
+    "run_cmd": "go run ./cmd/server/main.go --port=29995",
+    "port": 29995
+  },
+  {
+    "id": "channel-d",
+    "name": "Canal D",
+    "run_cmd": "go run ./cmd/server/main.go --port=29993",
+    "port": 29993
+  },
+  {
+    "id": "channel-e",
+    "name": "Canal E",
+    "run_cmd": "go run ./cmd/server/main.go --port=29994",
+    "port": 29994
+  },
+  {
+    "id": "channel-f",
+    "name": "Canal F",
+    "run_cmd": "go run ./cmd/server/main.go --port=29992",
+    "port": 29992
+  }
+]

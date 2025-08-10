@@ -1,0 +1,14 @@
+[START 10/08/2025  2:18:55,88] go run ./cmd/server/main.go 
+cmd\server\main.go:9:2: package Zone4-Server-Main-GO-main/config is not in std (C:\Program Files\Go\src\Zone4-Server-Main-GO-main\config)
+[START 10/08/2025  2:19:09,85] go run ./cmd/server/main.go 
+cmd\server\main.go:9:2: package Zone4-Server-Main-GO-main/config is not in std (C:\Program Files\Go\src\Zone4-Server-Main-GO-main\config)
+[START 10/08/2025  2:27:02,50] go run ./cmd/server/main.go 
+================================
+🟢 Canal está iniciando
+🔌 Porta TCP: 9090
+📡 Porta UDP: 9091
+🎮 Porta do Jogo: 9090
+================================
+2025/08/10 02:27:03 🩺 Debug/Métricas em http://127.0.0.1:6060 ( /metrics /healthz /debug/pprof/ )
+2025/08/10 02:27:03 ℹ️  Canais disponíveis: [9090, 29998, 29996, 29995, 29993, 29994, 29992]  |  CHANNEL_INDEX=0  |  Em uso: 9090
+^C
