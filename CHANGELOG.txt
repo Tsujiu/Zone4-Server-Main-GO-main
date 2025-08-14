@@ -1,83 +1,78 @@
-# 📝 CHANGELOG – Zone4 Server & Manager
+📝 CHANGELOG – Zone4 Server & Manager
+🚀 v1.0.0 – Lançamento Inicial
 
----
+Base em Go (go.mod, go.sum).
 
-## 🚀 **v1.0.0 – Lançamento Inicial**
-- Estrutura base criada em **Go** (`go.mod`, `go.sum`).
-- Suporte a **Docker** via `Dockerfile` e `docker-compose.yml`.
-- Configuração de ambiente: `.env`, `.gitignore`, `.gitattributes`.
-- Script **Windows**: `INICIAR SERVER.bat` para inicialização rápida.
+Suporte Docker (Dockerfile, docker-compose.yml).
 
----
+Configuração de ambiente (.env, .gitignore, .gitattributes).
 
-## 🔌 **Gerenciamento de Conexões**
-- **`controllers/connection_controller.go`** → Controle de conexões TCP/UDP.
-- **`controllers/packet/tcp_packet.go`** e **`udp_packet.go`** → Manipulação de pacotes de rede.
+Script rápido para Windows (INICIAR SERVER.bat).
 
----
+🔌 Conexões
 
-## 👤 **Módulo de Usuário**
-- **`controllers/user/user_controller.go`** → Autenticação e gerenciamento de contas.
-- **`controllers/user/user_controller_test.go`** → Testes automatizados de funcionalidades.
+controllers/connection_controller.go: Controle TCP/UDP.
 
----
+controllers/packet/: Manipulação de pacotes.
 
-## 🧍 **Módulo de Personagem**
-- **`controllers/character/character_controller.go`** → Criação, edição e remoção de personagens.
+👤 Usuário
 
----
+controllers/user/user_controller.go: Autenticação e contas.
 
-## 🎒 **Inventário**
-- **`controllers/inventory/inventory_controller.go`** → Manipulação de itens, equipar/desequipar.
+controllers/user/user_controller_test.go: Testes.
 
----
+🧍 Personagem
 
-## ⚔️ **Habilidades (Skills)**
-- **`controllers/skill/skill.go`** → Lógica de habilidades e ataques.
+controllers/character/character_controller.go: Gestão de personagens.
 
----
+🎒 Inventário
 
-## 🎮 **Gameplay**
-- **`controllers/gameplay/gameplay_controller.go`** → Lógica principal do jogo.
-- **`controllers/gameplay/gameplay_controller_test.go`** → Testes automatizados.
+controllers/inventory/inventory_controller.go: Itens e equipamentos.
 
----
+⚔️ Habilidades
 
-## 🏰 **Sistema de Guild/GangWar**
-- **`controllers/gangwar/gangwar_controller.go`** → Mecânica de guerras entre grupos.
+controllers/skill/skill.go: Lógica de skills e ataques.
 
----
+🎮 Gameplay
 
-## 🗺 **Dados e Mapas**
-- **Itens & Monstros**:
-  - `data/IGC_ItemList.xml`
-  - `data/IGC_MonsterList.xml`
-- **Mapas & Colisões**:
-  - `data/maps/*.att`
-  - `data/_map/*.att`
-- **Spawns de Monstros**:
-  - `data/MonsterSpawn*.xml`
+controllers/gameplay/gameplay_controller.go: Lógica principal.
 
----
+controllers/gameplay/gameplay_controller_test.go: Testes.
 
-## ⚙️ **Servidor**
-- **`cmd/server/main.go`** → Entrada principal do servidor de jogo.
-- **`cmd/manager/main.go`** → Entrada principal do gerenciador.
-- **`manager.go`** → Controle geral da aplicação.
+🏰 Guild / GangWar
 
----
+controllers/gangwar/gangwar_controller.go: Guerras entre grupos.
 
-## 📈 **Alterações Recentes**
-- ✅ Inclusão de testes automatizados.
-- ✅ Separação modular entre **server** e **manager**.
-- ✅ Adição de múltiplos arquivos de mapas e spawns.
+🗺 Dados & Mapas
 
----
+Itens & Monstros: IGC_ItemList.xml, IGC_MonsterList.xml.
 
-## ⚠️ **Pontos Pendentes**
-- 📌 `cmd/nothing ignore.txt` → Placeholder sem uso.
-- 📌 `README.md` → Documentação incompleta.
-- 📌 Verificar integridade de arquivos `.att`.
-- 📌 Criar scripts de inicialização para Linux.
+Mapas & Colisões: maps/*.att, _map/*.att.
 
----
+Spawns: MonsterSpawn*.xml.
+
+⚙️ Servidor
+
+cmd/server/main.go: Entrada servidor.
+
+cmd/manager/main.go: Entrada gerenciador.
+
+manager.go: Controle da aplicação.
+
+📈 Alterações Recentes
+
+Testes automatizados.
+
+Modularização entre server e manager.
+
+Inclusão de novos mapas e spawns.
+
+⚠️ Pendências
+
+Remover cmd/nothing ignore.txt.
+
+Completar README.md.
+
+Verificar .att.
+
+Criar scripts Linux.
